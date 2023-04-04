@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 200vh;
+    width: 100%;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, gray, white);
+}
+
+#logo {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#description {
+    margin-bottom: 25px;
+}
+
+#download {
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 25px;
+}
+
+#download:hover {
+    background: black;
+    cursor: pointer;
+}
+
+#download:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+#tos {
+    font-size: small;
+    margin: 50px;
+}
+
+img {
+    margin: 0 auto;
+}
+
+#preview {
+    width: 70%;
+    height: 90%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px) scale(1.05);
+}
+
+#freely {
+    width: 60%;
+    height: 80%;
+    margin-top: 100px;
+}
+
+#management {
+    width: 20%;
+    height: 40%;
+    margin-top: 100px;
+}
+
+#lightweight {
+    width: 60%;
+    height: 80%;
+    margin-top: 100px;
+}
+
+#changes {
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background: #6E6D70;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+    color: #DFDEDF;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-align: center;
+    width: 15%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 43%;
+}
+  
+#changes:hover {
+    background: black;
+    cursor: pointer;
+}
+  
+#changes:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}
+
+#copyright {
+    font-size: small;
+    color: gray;
+    margin-top: 20px;
+}
