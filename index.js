@@ -6,22 +6,18 @@ download.addEventListener("click", () => {
 });
 
 changes.addEventListener("click", () => {
-    window.open("https://github.com/FireStreaker2/STE-Electron-Website/commits/main");
+    window.open("https://github.com/FireStreaker2/STE-Electron/commits/master");
 });
 
 
-// animation magic
 var controller = new ScrollMagic.Controller();
-var timeline = new TimelineMax();
-
-timeline
-  .from('.animate-me:nth-child(odd)', { x: '-100%', opacity: 0 })
-  .from('.animate-me:nth-child(even)', { x: '100%', opacity: 0 })
-
-  var scene = new ScrollMagic.Scene({
-    triggerElement: '#pictures',
-    triggerHook: 0.5,
-    duration: '100%',
-  })
-    .setTween(timeline)
-    .addTo(controller);
+var revealElements = document.getElementsByClassName("animate-me");
+for (var i=0; i<revealElements.length; i++) {
+  new ScrollMagic.Scene({
+		  triggerElement: revealElements[i],
+			offset: 50,
+			triggerHook: 0.9,
+	})
+		.setClassToggle(revealElements[i], "visible")
+		.addTo(controller);
+}

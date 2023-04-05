@@ -70,7 +70,7 @@ img {
 #freely {
     width: 60%;
     height: 80%;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 #management {
@@ -98,9 +98,7 @@ img {
     touch-action: manipulation;
     text-align: center;
     width: 15%;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    margin-left: 43%;
+    margin: 0 auto;
 }
   
 #changes:hover {
@@ -117,4 +115,67 @@ img {
     font-size: small;
     color: gray;
     margin-top: 20px;
+}
+
+.animate-me {
+	opacity: 0;
+	-webkit-transform: translateX(-40px);
+	-moz-transform: translateX(-40px);
+	-ms-transform: translateX(-40px);
+	-o-transform: translateX(-40px);
+	transform: translateX(-40px);
+	-webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
+}
+
+.visible {
+	opacity: 1;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: #f1f1f1;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 1rem;
+}
+  
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+#separator {
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 10%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    margin: 1rem;
+}
+
+#lightweightText {
+    margin-bottom: 1rem;
+}
+
+#h1 {
+    color: black;
 }
