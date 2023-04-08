@@ -39,6 +39,7 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-bottom: 25px;
+  margin: 0 auto;
 }
 
 #download:hover {
@@ -178,4 +179,15 @@ footer {
 
 #h1 {
     color: black;
+}
+
+#downloads {
+	margin: 0 auto;
+	margin-top: 1%;
+	display: flex;
+	flex-direction: row;
+}
+
+#prebuilt {
+	margin-right: 2%;
 }
